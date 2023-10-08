@@ -7,3 +7,12 @@ resource "aws_s3_bucket" "example" {
   bucket_prefix = "hello-"
   
 }
+
+resource "aws_s3_bucket" "bucket" {
+  bucket = "kaizen-venera"
+  
+}
+
+output bucket_info{
+    value = aws_s3_bucket.bucket
+}
